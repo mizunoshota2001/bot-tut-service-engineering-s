@@ -7,7 +7,6 @@ import loglib
 from linelib import Reply
 
 SAMPLE_MESSAGE: dict = {'type': 'text', 'text': "Hello, wold!!"}
-API_SEND_REPLY_MESSAGES: str = "https://api.line.me/v2/bot/message/reply"
 CHANNEL_ACCESS_TOKEN: str = ""
 logger = loglib.get(__name__)
 
@@ -17,7 +16,7 @@ def main():
     event: dict = body["events"][0]
     rtoken: str = event['replyToken']
     etype: str = event["type"]
-    reply = Reply(API_SEND_REPLY_MESSAGES, CHANNEL_ACCESS_TOKEN, rtoken)
+    reply = Reply(CHANNEL_ACCESS_TOKEN, rtoken)
 
     if etype == "message":
         text: str = event["message"]["text"]
