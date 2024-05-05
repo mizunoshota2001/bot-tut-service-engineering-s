@@ -4,7 +4,7 @@ import json
 
 # custom module
 import loglib
-from replylib import Reply
+from linelib import Reply
 
 SAMPLE_MESSAGE: dict = {'type': 'text', 'text': "Hello, wold!!"}
 API_SEND_REPLY_MESSAGES: str = "https://api.line.me/v2/bot/message/reply"
