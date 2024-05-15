@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "config"
+version = "1.0.0"
+description = "config"
+authors = ["mizunoshota <mizunoshota.13.7.16@gmail.com>"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
