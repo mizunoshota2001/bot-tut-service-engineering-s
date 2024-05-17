@@ -23,18 +23,17 @@ from config import CONFIG
 # LINE BOT SDKの初期化
 configuration = Configuration(access_token=CONFIG["channel_access_token"])
 handler = WebhookHandler(CONFIG["channel_secret"])
+api_instance = MessagingApi(ApiClient(configuration))
 
 
 @handler.add(MessageEvent, message=TextMessageContent)
 def handle_message(event):
-    with ApiClient(configuration) as api_client:
-        line_bot_api = MessagingApi(api_client)
-        line_bot_api.reply_message_with_http_info(
-            ReplyMessageRequest(
-                reply_token=event.reply_token,
-                messages=[TextMessage(text=event.message.text)]
-            )
+    api_instance.reply_message_with_http_info(
+        ReplyMessageRequest(
+            reply_token=event.reply_token,
+            messages=[TextMessage(text=event.message.text)]
         )
+    )
 
 
 def main():

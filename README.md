@@ -13,31 +13,14 @@
 プロジェクトをクローンし、必要な依存関係をインストールする手順を示します。
 
 ```bash
+cd "cgi-binのパス"
 git clone https://github.com/mizunoshota2001/bot-tut-service-engineering-s.git
-cd your-repo-name
-python3.12 -m venv venv
-source venv/bin/activate  # Windowsの場合は `venv\Scripts\activate`
-pip install -r requirements.txt
+cd bot-tut-service-engineering-s
+python3.12 build.py
 ```
 
-## 実行方法
+## 詳細
 
-このプロジェクトのビルドスクリプトを実行する方法を示します。
-
-```bash
-python build.py
-```
-
-## プロジェクト構成
-
-プロジェクトのディレクトリ構成を簡単に説明します。
-
-```
-your-repo-name/
-├── build.py
-├── README.md
-├── requirements.txt
-└── (その他のファイルやディレクトリ)
-```
+README.pptxを参照
 
 

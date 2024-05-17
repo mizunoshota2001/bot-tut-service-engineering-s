@@ -31,13 +31,15 @@ def install_requirements():
 
 
 def update_settings():
-    shutil.copy(_PATH["settings"],_PATH["lib-settings"])
+    shutil.copy(_PATH["settings"], _PATH["lib-settings"])
 
 
 def main():
+    print("Processing...\n")
     make_venv()
     update_settings()
     install_requirements()
+    print("\ndone.")
 
 
 if __name__ == "__main__":
