@@ -22,5 +22,5 @@ python3.12 build.py
 ## 詳細
 
 README.pptxを参照
-
-
+LINEAPIの利用等は以下を参照
+https://github.com/line/line-bot-sdk-python

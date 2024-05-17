@@ -43,5 +43,5 @@ def main():
 
 
 if __name__ == "__main__":
-    print("Content-Type: text/plain\r\n")
+    print("Access-Control-Allow-Headers: Origin, Content-Type\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS\r\nContent-Type: application/json\r\n")
     main()
