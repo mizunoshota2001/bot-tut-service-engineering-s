@@ -15,12 +15,17 @@
 ```bash
 cd "cgi-binのパス"
 git clone https://github.com/mizunoshota2001/bot-tut-service-engineering-s.git
+chmod -R 777 bot-tut-service-engineering-s
 cd bot-tut-service-engineering-s
 ```
 settings.jsonを編集したのちに以下のコマンドを実行
 ```bash
 python3.12 build.py
 ```
+
+## webhook url
+[webhook.py](https://www.48v.me/~%E3%81%82%E3%81%AA%E3%81%9F/cgi-bin/bot-tut-service-engineering-s/webhook.py)
+
 ## 詳細
 
 README.pptxを参照
