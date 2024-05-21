@@ -25,7 +25,7 @@ python3.12 build.py
 
 ## webhook url
 ```
-https://www.48v.me/~%E3%81%82%E3%81%AA%E3%81%9F/cgi-bin/bot-tut-service-engineering-s/webhook.py
+https://www.48v.me/~あなた/cgi-bin/bot-tut-service-engineering-s/webhook.py
 ```
 
 ## 詳細
