@@ -18,6 +18,7 @@ git clone https://github.com/mizunoshota2001/bot-tut-service-engineering-s.git
 chmod -R 777 bot-tut-service-engineering-s
 cd bot-tut-service-engineering-s
 ```
+
 settings.jsonを編集したのちに以下のコマンドを実行
 ```bash
 python3.12 build.py
